@@ -1,0 +1,48 @@
+[versions]
+activityComposeVersion = "1.9.0"
+composeBomVersion = "2024.05.00"
+coreKtxVersion = "1.13.1"
+espressoCore = "3.5.1"
+glideVersion = "4.14.2"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+lifecycleRuntimeKtxVersion = "2.8.0"
+agp = "8.2.1"
+kotlin = "1.9.23"
+hilt = "2.44"
+roomCompilerVersion = "2.6.1"
+roomKtxVersion = "2.6.1"
+roomRuntimeVersion = "2.6.1"
+appcompat = "1.6.1"
+material = "1.12.0"
+
+[libraries]
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activityComposeVersion" }
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtxVersion" }
+androidx-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCore" }
+androidx-junit = { module = "androidx.test.ext:junit", version.ref = "junitVersion" }
+androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtxVersion" }
+androidx-material3 = { module = "androidx.compose.material3:material3" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomCompilerVersion" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomKtxVersion" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntimeVersion" }
+androidx-ui = { module = "androidx.compose.ui:ui" }
+androidx-ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
+androidx-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4" }
+androidx-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
+androidx-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+androidx-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeBomVersion" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glideVersion" }
+junit = { module = "junit:junit", version.ref = "junit" }
+
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+kapt = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+androidHilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
